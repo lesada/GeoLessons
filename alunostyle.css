@@ -1,0 +1,185 @@
+
+
+/* EU FAZENDO ESSA PORRA */
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,700|Lato|Noto+Sans+KR:400,700|Playfair+Display|Ranga:400,700|Staatliches&display=swap');
+
+body {
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  color:rgb(56, 55, 55);
+}
+
+.offset:before {
+  display:block;
+  content: "";
+  height: 4rem;
+  margin-top: -4rem;
+}
+
+/* Navegação */
+
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+  background-color: rgba(0, 0, 0, 0.82)!important;
+}
+
+.navbar-brand img {
+height: 2rem;
+}
+
+.navbar-nav li{
+  padding-right: 0.7rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  padding-top: 0.8rem;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: rgb(0, 140, 255);
+  padding-top: 0.8rem;
+}
+
+/*Landing*/
+
+.home-inner {
+  background-image: url(img/fundobinoculos.jpg);
+  filter: saturate(150%) brightness(75%);
+}
+
+
+#MeuPerfil img {
+  width: 100%;
+  border-radius: 50%;
+  margin: 1rem;
+}
+
+#MeuPerfil {
+  top: 15%;
+  position: absolute;
+  align-content: middle;
+}
+
+#nome {
+  padding-bottom: 1rem;
+  border-bottom: 0.15rem solid rgb(55, 113, 240);
+}
+
+#turma {
+  padding-top: 1rem;
+}
+
+h2.heading {
+  font-size: 1.9rem;
+  font-weight:700;
+  text-transform: uppercase;
+  margin-bottom: 1.8rem;
+}
+
+.heading-underline {
+  width: 3rem;
+  height: 0.2rem;
+  background-color:  rgb(148, 0, 0);
+  margin: 0 auto 2rem;
+}
+
+
+
+/* Teste de quadrado */
+
+/* Gera um quadrado responsivo. */
+.square{
+  /* float: left; */
+  position: relative;
+  width: 90%;
+}
+
+
+.centered {
+display: inline-block;
+vertical-align: middle;
+background: rgba(0, 0, 0, 0.493);
+color: #FFF;
+padding: 2rem;
+}
+
+
+
+
+
+
+/* Arrumar nas telas menores */
+
+@media (max-width: 767px){
+  .caption h1 {
+    font-size: 2.6rem;
+    letter-spacing: 0.15rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .caption h3 {
+    font-size: 1.3rem;
+    padding-bottom: 0.8rem;
+  }
+  
+  .menu {
+    padding: 0.5rem 1rem;
+    margin-right: 0.2rem;
+    font-size: 1rem;
+  }
+  .narrow h1 {
+    font-size: 1.5rem;
+  }
+
+  #MeuPerfil img {
+    max-width: 30%;
+    display: block;
+    margin: 0 auto;
+  }
+
+
+
+hr.socket {
+  width: 100%;
+  border-top: 0.15rem solid rgb(189, 1, 1);
+  margin-top: 7rem;
+}
+
+.square {
+    size: 5%;
+    position: relative;
+}
+
+
+}
+
+
+
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*============= COURSE SECTION =============*/
+

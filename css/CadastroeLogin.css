@@ -1,0 +1,128 @@
+
+
+#box,#box2 /* Caixa de fundo */{
+    height: 200px;
+    width: 1000px;
+    background-color:#2D2D2D;
+    border-radius: 5px;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+#main,#main2 /*parte do login*/{
+    height: 400px;
+    width: 450px;
+    background-color:white;
+    border-radius: 5px;
+    position: absolute;
+    top:50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+}
+#loginform,#signupform,#loginform2,#signupform2  /*Deixa as barras sempre dentro do quadrado que se mexe */{
+    position: absolute;
+    top:50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    z-index: 11;
+}
+#signupform,#signupform2/*Faz com que não fiquem dois formulários ao mesmo tempo*/{
+    top:45%;
+    left: 75%;
+    visibility: hidden;
+}
+#loginform h1,#signupform h1,#loginform2 h1,#signupform2 h1 /*Deixa a escrita do login bonitinha*/{
+    font-family: arial;
+    color:rgb(4, 192, 151);
+}
+#loginform input,#signupform input,#loginform2 input,#signupform2 input/*Deixa as caixas de texto bonitinhas*/{
+    height: 40px;
+    width: 300px;
+    border: 0px;
+    outline: none;
+    border-bottom: 1px solid black;
+    margin: 5px;
+}
+#loginform button,#signupform button,#loginform2 button,#signupform2 button /*Botões de Login e Cadastro dentro do quadrado branco*/{
+    height: 35px;
+    width: 130px;
+    background-color:rgb(4, 192, 151);
+    font-family: monospace;
+    font-size: 16px;
+    color:white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 175px;
+}
+#login_btn,#signup_btn,#login_btn2,#signup_btn2/*Botões de Login e Cadastro fora do quadrado branco*/{
+    height: 35px;
+    width: 120px;
+    background-color:transparent;
+    color:white;
+    border:1px solid white;
+    border-radius: 5px;
+    outline: none;
+    position: absolute;
+    left: 75%;
+    top:65%;
+    transform: translate(-50%,-50%);
+    transition: all .5s;
+}
+#signup_btn,#signup_btn2/*Coloca o botão de se inscrever do quadrado preto no lugar certo*/{
+    left: 25%;
+}
+#login_btn:hover,#signup_btn:hover,#login_btn2:hover,#signup_btn2:hover/*Deixa o botão branco com o cursor em cima*/{
+    background-color:white;
+    color:#2d2d2d;
+    cursor: pointer;
+}
+#login_msg,#signup_msg,#login_msg2,#signup_msg2 /*Possui uma conta?*/{
+    font-family: sans-serif;
+    font-size: 25px;
+    color:white;
+    position: absolute;
+    top:35%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+    z-index: 9;
+}
+#signup_msg,#signup_msg2{
+    left: 25%;
+}
+/*EU QUE FIZ, TANANANAMMMMM*/
+#InscreverB:hover,#LogarB,#InscreverB2:hover,#LogarB2 {
+    background-color:rgb(2, 134, 106);
+    color:white;
+    cursor: pointer;
+    transition: all .5s
+}
+
+#isso {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    
+}
+
+#escritologin, #escritologin2, #escritocadastre-se, #escritocadastre-se2 {
+    text-shadow: 0rem 0rem 0rem;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1;
+    letter-spacing: 0rem;
+    padding-bottom: 1rem;
+}
+
+#login_btn, #login_btn2, #signup_btn, #signup_btn2 {
+    width: 120px;
+    padding-bottom: 0rem;
+}
+
+#login_msg, #login_msg2, #signup_msg, #signup_msg2 {
+    text-transform: none
+}
+

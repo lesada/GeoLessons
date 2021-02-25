@@ -1,0 +1,484 @@
+
+
+/* EU FAZENDO ESSA PORRA */
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,700|Lato|Noto+Sans+KR:400,700|Playfair+Display|Ranga:400,700|Staatliches&display=swap');
+
+body {
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  color:rgb(56, 55, 55);
+}
+
+.offset:before {
+  display:block;
+  content: "";
+  height: 4rem;
+  margin-top: -4rem;
+}
+
+/* Navegação */
+
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+  background-color: rgba(0, 0, 0, 0.82)!important;
+}
+
+.navbar-brand img {
+height: 2rem;
+}
+
+.navbar-nav li{
+  padding-right: 0.7rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  padding-top: 0.8rem;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: rgb(0, 140, 255);
+  padding-top: 0.8rem;
+}
+
+/*Landing*/
+
+.home-inner {
+  background-image: url(img/montanha.jpg);
+  filter: saturate(150%);
+}
+
+.caption {
+  width:100%;
+  max-width: 100%;
+  position: absolute;
+  top:35%;
+  z-index: 1;
+  text-transform: uppercase;
+}
+
+.caption h1 {
+  font-size: 3.8rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  color: white;
+  text-shadow: 0.1rem 0.1rem 0.2rem black;
+  padding-bottom: 1rem;
+}
+
+.caption h3 {
+  font-family:'Staatliches', cursive;
+  font-size: 1.9rem;
+  color: rgb(0, 0, 0);
+  /* text-shadow: 0.1rem 0.1rem 0.2rem black; */
+  padding-bottom: 1.6rem;
+}
+
+.menu {
+  border-width: medium;
+  border-radius: 5px;
+  padding: 0.6rem 1.3rem;
+  display: inline;
+  margin-right: 0.9rem;
+  font-size: 1.3rem;
+  font-family:'Dosis', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  
+}
+
+.menu:hover{
+  background-color: rgba(0, 0, 100, 0.75);
+  color: white;
+}
+
+/* Funcionalidades */
+
+.narrow {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+}
+.narrow h1 {
+    font-size: 2.4rem;
+  }
+
+ .jumbotron {
+   margin-bottom: 0;
+   padding: 2rem 0 3.5rem;
+   border-radius: 0;
+ }
+
+ h3.heading {
+   font-size: 1.9rem;
+   font-weight:700;
+   text-transform: uppercase;
+   margin-bottom: 1.8rem;
+ }
+
+ .heading-underline {
+   width: 3rem;
+   height: 0.2rem;
+   background-color:  rgb(0, 140, 255);
+   margin: 0 auto 2rem;
+ }
+
+.funcionalidade svg.svg-inline--fa {
+  color: rgb(0, 140, 255);
+}
+
+.funcionalidade h3 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding-bottom: 0.4rem;
+}
+
+.funcionalidade p {
+  font-size: 1.1rem;
+}
+
+/* Recursos */
+
+.recurso svg.svg-inline--fa {
+  color: rgb(0, 140, 255);
+}
+
+.fixed {
+  background-image: url(img/computador.jpg);
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+.dark {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 7rem 2rem;
+}
+
+.fixed-background h3 {
+  margin-bottom: 2rem;
+}
+
+.fixed-background p {
+  margin-top:  1.5rem;
+}
+
+
+/* Criadoras */
+
+.criadoras img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+#aspasleft
+ {
+  color: rgb(0, 140, 255);
+  margin: 1rem;
+}
+
+blockquote .svg-inline--fa{
+  color: rgb(0, 140, 255);
+  margin-left: 1rem;
+}
+
+.criadoras-hr {
+  border-top: 0.1rem solid rgb(0, 140, 255);
+}
+
+/* Contato */
+
+.rodape {
+  height: 15rem;
+}
+
+footer {
+  background-color: rgb(56, 55, 55);
+  color: whitesmoke;
+  padding: 2rem 0 2rem;
+}
+
+footer img {
+  height: 3rem;
+  margin: 1.5rem 0;
+}
+
+hr.socket {
+  width: 100%;
+  border-top: 0.15rem solid rgb(189, 1, 1);
+  margin-top: 3rem;
+}
+
+/* BOX DE LOGIN NESSA POHA */
+
+
+#box,#box2 /* Caixa de fundo */{
+  height: 200px;
+  width: 1000px;
+  background-color:#2D2D2D;
+  border-radius: 5px;
+  position: fixed;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: none;
+}
+#main,#main2 /*parte do login*/{
+  height: 400px;
+  width: 450px;
+  background-color:white;
+  border-radius: 5px;
+  position: absolute;
+  top:50%;
+  left: 70%;
+  transform: translate(-50%,-50%);
+  z-index: 10;
+}
+#loginform,#signupform,#loginform2,#signupform2  /*Deixa as barras sempre dentro do quadrado que se mexe */{
+  position: absolute;
+  top:50%;
+  left: 70%;
+  transform: translate(-50%,-50%);
+  z-index: 11;
+}
+#signupform,#signupform2/*Faz com que não fiquem dois formulários ao mesmo tempo*/{
+  top:45%;
+  left: 75%;
+  visibility: hidden;
+}
+#loginform h1,#signupform h1,#loginform2 h1,#signupform2 h1 /*Deixa a escrita do login bonitinha*/{
+  font-family: arial;
+  color:rgb(4, 192, 151);
+  font-size: 25px;
+}
+#loginform input,#signupform input,#loginform2 input,#signupform2 input/*Deixa as caixas de texto bonitinhas*/{
+  height: 40px;
+  width: 300px;
+  border: 0px;
+  outline: none;
+  border-bottom: 1px solid black;
+  margin: 5px;
+}
+#loginform button,#signupform button,#loginform2 button,#signupform2 button /*Botões de Login e Cadastro dentro do quadrado branco*/{
+  height: 35px;
+  width: 130px;
+  background-color:rgb(4, 192, 151);
+  font-family: monospace;
+  font-size: 16px;
+  color:white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-left: 175px;
+}
+#login_btn,#signup_btn,#login_btn2,#signup_btn2/*Botões de Login e Cadastro fora do quadrado branco*/{
+  height: 35px;
+  width: 120px;
+  background-color:transparent;
+  color:white;
+  border:1px solid white;
+  border-radius: 5px;
+  outline: none;
+  position: absolute;
+  left: 75%;
+  top:65%;
+  transform: translate(-50%,-50%);
+  transition: all .5s;
+}
+#signup_btn,#signup_btn2/*Coloca o botão de se inscrever do quadrado preto no lugar certo*/{
+  left: 25%;
+}
+#login_btn:hover,#signup_btn:hover,#login_btn2:hover,#signup_btn2:hover/*Deixa o botão branco com o cursor em cima*/{
+  background-color:white;
+  color:#2d2d2d;
+  cursor: pointer;
+}
+#login_msg,#signup_msg,#login_msg2,#signup_msg2 /*Possui uma conta?*/{
+  font-family: sans-serif;
+  font-size: 25px;
+  color:white;
+  position: absolute;
+  top:35%;
+  left: 75%;
+  transform: translate(-50%,-50%);
+  z-index: 9;
+}
+#signup_msg,#signup_msg2{
+  left: 25%;
+}
+/*EU QUE FIZ, TANANANAMMMMM*/
+#InscreverB:hover,#LogarB,#InscreverB2:hover,#LogarB2 {
+  background-color:rgb(2, 134, 106);
+  color:white;
+  cursor: pointer;
+  transition: all .5s
+}
+
+#isso {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  
+}
+
+#escritologin, #escritologin2, #escritocadastre-se, #escritocadastre-se2 {
+  text-shadow: 0rem 0rem 0rem;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 1;
+  letter-spacing: 0rem;
+  padding-bottom: 1rem;
+}
+
+#login_btn, #login_btn2, #signup_btn, #signup_btn2 {
+  width: 120px;
+  padding-bottom: 0rem;
+}
+
+#login_msg, #login_msg2, #signup_msg, #signup_msg2 {
+  text-transform: none
+}
+
+/* ACABA A CAIXA DA LAUREN*/
+
+.menu {
+  font-family: 'Lato', sans-serif;
+}
+
+
+#keterly, #eduarda, #Lauren {
+  filter: grayscale(100%) brightness(150%);
+}
+
+
+/* Arrumar nas telas menores */
+
+@media (max-width: 767px){
+  .caption h1 {
+    font-size: 2.6rem;
+    letter-spacing: 0.15rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .caption h3 {
+    font-size: 1.3rem;
+    padding-bottom: 0.8rem;
+  }
+  
+  .menu {
+    padding: 0.5rem 1rem;
+    margin-right: 0.2rem;
+    font-size: 1rem;
+  }
+  .narrow h1 {
+    font-size: 1.5rem;
+  }
+
+  .criadoras img {
+    max-width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #box, #box2, #main, #main2, #loginform, #loginform2, #signupform, #signupform2, #loginform h1,#signupform h1,#loginform2 h1,#signupform2 h1, #loginform input,#signupform input,#loginform2 input,#signupform2 input, #loginform button,#signupform button,#loginform2 button,#signupform2 button, #login_btn,#signup_btn,#login_btn2,#signup_btn2, #signup_btn,#signup_btn2, #login_msg,#signup_msg,#login_msg2,#signup_msg2, #InscreverB:hover,#LogarB,#InscreverB2:hover,#LogarB2, #escritologin2, #escritocadastre-se, #escritocadastre-se2, #login_msg, #login_msg2, #signup_msg, #signup_msg2{
+    max-width: 90%;
+    font-size: .75rem;
+  }
+
+  #escritocadastre-se, #escritocadastre-se2{
+    font-size: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 0;
+  }
+
+  #InscreverB {
+    margin-top: 1rem;
+  }
+  
+  /*Coisas que o Mateus querido maravilhoso fez*/
+
+
+  #loginform h1,#signupform h1,#loginform2 h1,#signupform2 h1  {
+    font-size: 1rem;
+  }
+
+  #main, #main2 {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  #loginform button,#signupform button,#loginform2 button,#signupform2 button {
+    height: 2rem;
+    width: 5.5rem;
+    right: 5%;
+    position: absolute;
+    top: 85%
+  }
+
+  #loginform input,#signupform input,#loginform2 input,#signupform2 input/*Deixa as caixas de texto bonitinhas*/{
+    height: 1.5rem;
+    width: 9rem;
+    border: 0px;
+    outline: none;
+    border-bottom: 1px solid black;
+    margin: 5px;
+  
+ }
+ 
+#escritologin, #escritocadastre-se, #escritologin2, #escritocadastre-se2 {
+  bottom: 100%;
+  position: absolute;
+}
+
+#login_msg,#login_msg2 {
+  font-size: .85rem;
+  left: 75%;
+  top: 40%;
+  position: relative;
+}
+
+#signup_msg,#signup_msg2 {
+  font-size: .85rem;
+  left: 25%;
+  top: 30%;
+  position: relative;
+}
+
+hr.socket {
+  width: 100%;
+  border-top: 0.15rem solid rgb(189, 1, 1);
+  margin-top: 7rem;
+}
+
+}
+
+
+
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*============= COURSE SECTION =============*/
+
